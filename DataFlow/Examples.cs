@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Reactive.Linq;
 using System.Reactive.Threading.Tasks;
+using System.Runtime.Serialization;
 using System.Threading.Tasks;
 using System.Threading.Tasks.Dataflow;
 using Shouldly;
@@ -121,13 +122,13 @@ namespace Sandbox
             var trackingPoller = TransformMany(
                 (Trackable job) => PollCarrier2(job.CarrierRef)
                                     .Select(raw => (job, raw)));
-            
+
             var trackingMapper = Transform(
                 ((Trackable, RawTracking) tup) => {
                     var (trackable, raw) = tup;
                     return MapRaw(trackable, raw);
                 });
-            
+                
             var sink = new BufferBlock<Tracked>();
 
             LinkUp(jobPoller, trackingPoller);
@@ -237,6 +238,7 @@ namespace Sandbox
         
         public static void LinkUp<T>(ISourceBlock<T> source, ITargetBlock<T> target)
             => source.LinkTo(target, new DataflowLinkOptions { PropagateCompletion = true });
+        
     }
     
 }
