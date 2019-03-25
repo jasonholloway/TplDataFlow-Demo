@@ -2,7 +2,6 @@ using System;
 using System.Threading.Tasks;
 using GreenPipes;
 using MassTransit;
-using MassTransit.AzureServiceBusTransport.Contexts;
 
 namespace Sandbox.Blocks 
 {

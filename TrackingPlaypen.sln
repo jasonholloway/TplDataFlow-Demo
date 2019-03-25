@@ -3,11 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 #
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MassTransit", "MassTransit", "{6B32E3A8-7FD5-490C-B0D1-F2943C8854B9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "MassTransit\Sandbox\Sandbox.csproj", "{2130A0C2-8731-4DE2-A223-66FE72B8B749}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playpen", "MassTransit\Playpen\Playpen.csproj", "{2130A0C2-8731-4DE2-A223-66FE72B8B749}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TplDataFlow", "TplDataFlow", "{0409643A-AE68-448F-8ACC-CEB770C2BDE7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sandbox", "DataFlow\Sandbox.csproj", "{3CA74104-A605-4E93-8D16-A6B00CF0DDED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Playpen.Test", "MassTransit\Playpen.Test\Playpen.Test.csproj", "{9A936F81-197C-4727-85E0-62F51AF875B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,9 +25,14 @@ Global
 		{3CA74104-A605-4E93-8D16-A6B00CF0DDED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CA74104-A605-4E93-8D16-A6B00CF0DDED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CA74104-A605-4E93-8D16-A6B00CF0DDED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A936F81-197C-4727-85E0-62F51AF875B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A936F81-197C-4727-85E0-62F51AF875B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A936F81-197C-4727-85E0-62F51AF875B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A936F81-197C-4727-85E0-62F51AF875B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2130A0C2-8731-4DE2-A223-66FE72B8B749} = {6B32E3A8-7FD5-490C-B0D1-F2943C8854B9}
 		{3CA74104-A605-4E93-8D16-A6B00CF0DDED} = {0409643A-AE68-448F-8ACC-CEB770C2BDE7}
+		{9A936F81-197C-4727-85E0-62F51AF875B7} = {6B32E3A8-7FD5-490C-B0D1-F2943C8854B9}
 	EndGlobalSection
 EndGlobal

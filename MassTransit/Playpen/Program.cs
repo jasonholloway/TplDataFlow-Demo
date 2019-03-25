@@ -2,7 +2,7 @@
 using System.Threading;
 using Castle.Windsor;
 using MassTransit;
-using MassTransit.AzureServiceBusTransport;
+using MassTransit.Azure.ServiceBus.Core;
 using Sandbox.Blocks;
 
 namespace Sandbox 
